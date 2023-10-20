@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div  class="question-container" style="color: rgba(0, 0, 0, 0.568);">
+        <div id="question" class="question"></div>
+        <div id="alternatives" class="alternatives"></div>
+    </div>
+    <div class="acao">
+    <button id="next-question-btn" >Próxima</button>
+    <button id="add-question-btn">Editar</button> 
+</div>
+    <div id="add-question-form" class="hidden">
+        <label for="new-question" class="txt" ></label>
+        <input type="text" id="new-question" class="txt" required placeholder="Nova Pergunta:"><br>
+        <label for="option-a" class="txt"></label>
+        <input type="text" id="option-a" class="txt"required placeholder="Opção A:"><br>
+        <label for="option-b" class="txt"></label>
+        <input type="text" id="option-b" class="txt" required placeholder="Opção B:"><br>
+        <label for="option-c" class="txt"></label>
+        <input type="text" id="option-c" class="txt" required placeholder="Opção C:"><br>
+        <label for="option-d" class="txt"></label>
+        <input type="text" id="option-d" class="txt" required placeholder="Opção D:" ><br>
+        <label for="correct-answer"class="txt" ></label>
+        <input type="text" id="correct-answer" class="txt" required placeholder="Resposta Correta (A, B, C ou D):"><br>
+        <button id="submit-question-btn">Adicionar</button>
+    </div>
+
+    
+<div class="time">
+    <form name="form_main">
+        <button type="button" name="start" class="tempo">start</button>
+        <button type="button" name="pause"class="tempo">pause</button>
+        <button type="button" name="reset"class="tempo">reset</button>
+      </form>
+    </div>
+    
+       <div class="relogio">
+          <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+        </div>
+      
+        <br />
+       
+      <script src="script.js"></script>
+
+      
+</body>
+
+</html>
